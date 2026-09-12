@@ -1,0 +1,8 @@
+# Robots.txt for Suman Mandal's Portfolio
+# Allow all search engine crawlers
+
+User-agent: *
+Allow: /
+
+# XML Sitemap location
+Sitemap: https://rajsprojects.github.io/Portfolio_website/sitemap.xml

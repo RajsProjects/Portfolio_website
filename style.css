@@ -1075,7 +1075,7 @@ code {
 /* ═══ CONTACT ═══ */
 .sec--contact { padding-block: clamp(var(--space-16), 9vw, var(--space-32)); background: var(--color-surface); border-top: 1px solid var(--color-border-2); }
 .contact__h { font-family: var(--font-display); font-size: var(--text-2xl); letter-spacing: -0.03em; margin: var(--space-5) 0 var(--space-6); }
-.contact__grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(252px, 1fr)); gap: var(--space-4); }
+.contact__grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(252px, 1fr)); gap: var(--space-4); font-style: normal; }
 .cc {
   display: flex; flex-direction: column; gap: var(--space-2);
   border: 1px solid var(--color-border); border-radius: var(--radius-lg);
