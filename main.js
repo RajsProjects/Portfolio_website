@@ -242,10 +242,10 @@
 
       // Subtle dynamic HUD highlight
       if (hudChips.length >= 3) {
-        hudChips.forEach(function (chip) { chip.style.borderColor = 'rgba(76, 141, 255, 0.3)'; });
-        if (newBeat === 1 && hudChips[0]) hudChips[0].style.borderColor = '#10b981';
-        if (newBeat === 2 && hudChips[1]) hudChips[1].style.borderColor = '#00e5ff';
-        if (newBeat === 3 && hudChips[2]) hudChips[2].style.borderColor = '#4c8dff';
+        hudChips.forEach(function (chip) { chip.style.borderColor = 'rgba(200, 141, 88, 0.32)'; });
+        if (newBeat === 1 && hudChips[0]) hudChips[0].style.borderColor = '#c88d58';
+        if (newBeat === 2 && hudChips[1]) hudChips[1].style.borderColor = '#e8c49e';
+        if (newBeat === 3 && hudChips[2]) hudChips[2].style.borderColor = '#f7f1e6';
       }
     }
   }
