@@ -1,61 +1,171 @@
 ---
 name: animejs
-description: Helps build modern web animations using Anime.js, especially for React portfolio interfaces, text reveals, staggered animations, hover interactions, SVG animations, and lightweight UI motion.
+description: Build performant, polished web animations using Anime.js v4.5.0 for this React portfolio. Use for text reveals, staggered entrances, hover interactions, SVG animation, timelines, micro-interactions, and cinematic UI motion.
 ---
 
 # Anime.js Skill
 
-Use Anime.js when implementing animations for this project.
+## Purpose
 
-## General rules
+Use Anime.js v4.5.0 to create polished, intentional animations for this portfolio.
 
-- Prefer Anime.js for lightweight interface animations.
-- Use Anime.js for entrance animations, text reveals, staggered elements, hover interactions, SVG animations, and micro-interactions.
-- Avoid unnecessary continuous animation loops.
-- Keep animations performant.
-- Respect prefers-reduced-motion where appropriate.
-- Do not add animations merely for visual decoration.
-- Animations should support the user's understanding of the interface.
+The goal is premium motion design, not animation everywhere.
 
-## React
+## When to use Anime.js
 
-When working with React:
+Use Anime.js for:
 
-- Prefer React lifecycle hooks appropriately.
-- Scope animations to the component.
-- Clean up animation resources when components unmount.
-- Avoid directly manipulating unrelated DOM elements.
+- Text reveal animations
+- Character/word/line stagger effects
+- Section entrance animations
+- Element choreography
+- SVG animations
+- Timeline-based sequences
+- Interactive UI motion
+- Hover and cursor interactions
+- Micro-interactions
+- Coordinated page transitions
 
-## Portfolio animation style
+## When NOT to use Anime.js
+
+Prefer CSS when a simple CSS transition is sufficient.
+
+Do not use Anime.js for:
+
+- Simple opacity transitions
+- Basic hover effects
+- Simple transforms
+- Layout styling
+- Animations that CSS can handle cleanly
+
+Do not introduce JavaScript animation unnecessarily.
+
+## React rules
+
+This project uses React.
+
+When using Anime.js:
+
+1. Keep animations scoped to the component.
+2. Start animations after the component has mounted.
+3. Avoid manipulating unrelated DOM elements.
+4. Clean up animation instances when components unmount.
+5. Avoid unnecessary re-renders.
+6. Prefer refs for DOM animation targets.
+7. Do not store rapidly changing animation state in React state.
+
+## Performance
+
+Prioritize:
+
+- transform
+- opacity
+- efficient DOM access
+- GPU-friendly animation
+- minimal layout recalculation
+
+Avoid animating expensive layout properties such as:
+
+- width
+- height
+- top
+- left
+- margin
+- padding
 
 Prefer:
 
-- smooth entrance animations
-- staggered text reveals
-- subtle hover interactions
-- elegant transitions
-- cinematic section transitions
-- interactive typography
-- SVG motion
+- translateX
+- translateY
+- scale
+- rotate
+- opacity
+
+Do not create unnecessary infinite animations.
+
+## Motion design
+
+Animations should have purpose.
+
+Prefer:
+
+- smooth entrances
+- controlled stagger
+- subtle easing
+- deliberate timing
+- consistent motion language
+- visual hierarchy
 
 Avoid:
 
 - excessive bouncing
-- random animation everywhere
-- distracting infinite loops
-- animations that reduce readability
-- unnecessary dependencies
+- random movement
+- excessive particles
+- constant motion
+- distracting effects
+- animation that hurts readability
 
-## Implementation
+## Portfolio style
 
-Before creating an animation:
+The portfolio should feel:
 
-1. Understand the purpose of the animation.
-2. Decide whether CSS is sufficient.
-3. Use Anime.js when JavaScript-driven animation provides meaningful value.
-4. Keep the implementation component-friendly.
-5. Test responsiveness and performance.
+- premium
+- modern
+- technical
+- cinematic
+- confident
+- minimal
+- responsive
 
-## Priority
+Motion should reinforce the visual hierarchy.
 
-Performance and usability are more important than animation complexity.
+Important content should appear naturally before decorative animation.
+
+## Accessibility
+
+Respect reduced-motion preferences.
+
+When the user prefers reduced motion:
+
+- reduce or disable non-essential animation
+- preserve content visibility
+- avoid motion-dependent interactions
+
+Never hide essential content permanently behind an animation.
+
+## Implementation workflow
+
+Before implementing an animation:
+
+1. Identify the purpose.
+2. Determine whether CSS is enough.
+3. If JavaScript animation is useful, use Anime.js.
+4. Choose the smallest appropriate animation.
+5. Keep the animation scoped to its component.
+6. Test desktop and mobile behavior.
+7. Consider reduced-motion behavior.
+8. Check performance.
+
+## Code quality
+
+Prefer simple, readable animation code.
+
+Do not create large animation abstractions unless multiple components genuinely need them.
+
+Keep animation logic close to the component it controls.
+
+Use Anime.js v4.5.0 APIs and syntax.
+
+Do not invent Anime.js APIs.
+
+When uncertain about an API, consult the official Anime.js documentation before implementing it.
+
+## Design principle
+
+The portfolio should never look like:
+
+"Look how many animations I can add."
+
+It should look like:
+
+"Every movement was intentional."
